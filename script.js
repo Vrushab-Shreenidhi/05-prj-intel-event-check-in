@@ -180,3 +180,5 @@ clearListBtn.addEventListener("click", handleClearList);
 // Load data when page loads
 loadData();
 
+
+
