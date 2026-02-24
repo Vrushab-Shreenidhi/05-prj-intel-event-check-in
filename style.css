@@ -100,8 +100,48 @@ body {
 
 .form-group {
   display: flex;
+  flex-direction: column;
   gap: 15px;
   width: 100%;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#checkInBtn {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.clear-btn {
+  background: none;
+  color: #0071c5;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  min-width: auto;
+  height: auto;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  text-decoration: underline;
+  margin-top: 8px;
+}
+
+.clear-btn:hover {
+  background-color: transparent;
+  transform: none;
+  box-shadow: none;
+  color: #005a9e;
 }
 
 /* Form elements */
@@ -146,11 +186,6 @@ button:hover {
   background-color: #005a9e;
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(0, 113, 197, 0.3);
-}
-
-#checkInBtn {
-  flex-shrink: 0;
-  white-space: nowrap;
 }
 
 /* Icon spacing */
@@ -440,6 +475,20 @@ select {
 
   .input-wrapper {
     flex-direction: column;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #checkInBtn {
+    width: 100%;
+  }
+
+  .clear-btn {
+    flex: none;
+    min-width: auto;
   }
 
   .teams-grid {
